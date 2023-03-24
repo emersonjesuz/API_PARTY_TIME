@@ -1,0 +1,111 @@
+POST  http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "algun serviço",
+    "description": "serviço a compra",
+    "price":1400,
+    "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png"
+}
+
+### 
+
+GET  http://localhost:3000/api/services
+
+
+
+###
+GET  http://localhost:3000/api/services/6414cd1691b7d345eb8316db
+
+
+###
+DELETE   http://localhost:3000/api/services/6414cd1691b7d345eb8316db
+
+###
+
+PUT   http://localhost:3000/api/services/6414c96563bfeaea4f10e030
+Content-Type: application/json
+
+{
+    "name": "josiemerson",
+    "description": "atualizado",
+    "price":1400,
+    "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png"
+}
+
+
+###
+
+POST  http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "EVENTO GRANDE",
+    "author": "emerson",
+    "description": "serviço a compra",
+    "budget":2400,
+    "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png",
+    "services": 
+    [
+        {
+            "name": "algun serviço 1",
+            "description": "serviço a compra",
+            "price":400,
+            "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png"
+        },
+        {
+            "name": "algun serviço 2",
+            "description": "serviço a compra",
+            "price":400,
+            "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png"
+        },
+        {
+            "name": "algun serviço 3",
+            "description": "serviço a compra",
+            "price":400,
+            "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png"
+        }
+    ]
+}
+
+### 
+
+GET  http://localhost:3000/api/parties
+
+### 
+
+GET  http://localhost:3000/api/parties/641602a4398fcbfa2d704bd5
+
+
+### 
+
+DELETE   http://localhost:3000/api/parties/641602a4398fcbfa2d704bd5
+
+
+###
+
+PUT   http://localhost:3000/api/parties/64160f1c2651108eed5ee2a5
+Content-Type: application/json
+
+{
+    "title": "EVENTO GRANDE JOSIEMERON",
+    "author": "emerson",
+    "description": "serviço a compra",
+    "budget":2400,
+    "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png",
+    "services": 
+    [
+        {
+            "name": "algun serviço 1",
+            "description": "serviço a compra",
+            "price":400,
+            "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png"
+        },
+        {
+            "name": "algun serviço 2",
+            "description": "serviço a compra",
+            "price":400,
+            "image" :"https://cdn-icons-png.flaticon.com/512/3884/3884851.png"
+        }
+    ]
+}
